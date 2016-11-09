@@ -1,0 +1,311 @@
+body {
+	margin: 1em auto;
+}
+.face {
+	display: none;
+	width: 285.27px;
+	margin-left: 10.4166667%; /*50*/
+	margin-right: -70px;
+	opacity: 0;
+	animation: open 1s .3s ease-in-out 1 forwards;
+	-webkit-animation: open 1s .3s ease-in-out 1 forwards;
+	-moz-animation: open 1s .3s ease-in-out 1 forwards;
+	-ms-animation: open 1s .3s ease-in-out 1 forwards;
+}
+.face_mobile {
+	width: 205.27px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	opacity: 0;
+	animation: open 1s .3s ease-in-out 1 forwards;
+	-webkit-animation: open 1s .3s ease-in-out 1 forwards;
+	-moz-animation: open 1s .3s ease-in-out 1 forwards;
+	-ms-animation: open 1s .3s ease-in-out 1 forwards;
+}
+.content {
+	margin: 0 auto;
+	display: block;
+	top: 0;
+	max-width: 410px;
+	min-width: 320px;
+	text-align: center;
+	position: relative;
+}
+h1 {
+	font-size: 2em;
+	margin: 0;
+	font-family: 'Hind', sans-serif;
+	font-weight: lighter;
+	color: #181919;
+	line-height: 100%;
+	display: inline-block;
+	opacity: 0;
+	-webkit-animation: open .8s 1s ease-in-out 1 forwards;
+	-moz-animation: open .8s 1s ease-in-out 1 forwards;
+	-ms-animation: open .8s 1s ease-in-out 1 forwards;
+}
+p {
+	font-size: 1em; /*30*/
+	margin: 1em 5%;
+	margin-top: 1.5em; /*45*/
+	font-family: 'Raleway', sans-serif;
+	color: #4f4f4e;
+	line-height: 160%;
+	opacity: 0;
+	-webkit-animation: open .8s 1.5s ease-in-out 1 forwards;
+	-moz-animation: open .8s 1.5s ease-in-out 1 forwards;
+	-ms-animation: open .8s 1.5s ease-in-out 1 forwards;
+}
+.content a {
+	opacity: 0;
+	-webkit-animation: open .8s 1.7s ease-in-out 1 forwards;
+	-moz-animation: open .8s 1.7s ease-in-out 1 forwards;
+	-ms-animation: open .8s 1.7s ease-in-out 1 forwards;
+}
+.content img {
+	height: 45px;
+	-webkit-transition: transform .125s ease-in-out;
+	-moz-transition: transform .125s ease-in-out;
+	-ms-transition: transform .125s ease-in-out;
+}
+.content img:hover {
+	-webkit-transform: translateY(-10%);
+	-moz-transform: translateY(-10%);
+	-ms-transform: translateY(-10%);
+}
+#cube-game {
+	display: none;
+	}
+.shadow {
+	display: none;
+	}
+@keyframes open {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media only screen and (min-width: 750px){
+	body {
+		width: 1000px;
+		margin: 4em auto;
+	}
+	.face {
+		display: initial;
+	}
+	.face_mobile {
+		display: none;
+	}
+	.content {
+		max-width: none;
+		display: inline-block;
+		top: -4.375em; /*150*/
+		text-align: initial;
+		width: 485px;
+	}
+	h1 {
+		font-size: 2.7em; /*72*/
+	}
+	p {
+		font-size: 1.125em; /*30*/
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.align {
+		margin-left: -1.380952381%; /*15*/
+	}
+	.left {
+		margin-left: 1.380952381%; /*15*/
+	}
+	.content img {
+		height: 50px;
+	}
+}
+@media only screen and (min-width: 1650px){
+	#cube-game {
+		display: initial;
+	}
+	body {
+	    width: 1200px;
+	    margin-left: 2%;
+	}
+	.face {
+	  	width: 480px;
+	  	margin-right: -100px;
+  	}
+  	.content {
+	  	width: 630px;
+	  	top: 0;
+  	}
+  	h1 {
+  		font-size: 4.5em;
+  	}
+  	p {
+  		font-size: 1.875em;
+  	}
+  	.align {
+  		margin-left: -2.380952381%;
+  	}
+  	.left {
+  		margin-left: 2.380952381%;
+  	}
+  	.content img {
+  		height: 100%;
+  	}
+  	main {
+  		display: initial;
+  	}
+  	.shadow {
+  		display: initial;
+  	}
+
+  	#cube-game {
+	    position: absolute;
+	    right: -400px;
+	    top: -130px;
+	    -webkit-animation: opa 1.2s 2s ease-in-out forwards;
+	    -moz-animation: opa 1.2s 2s ease-in-out forwards;
+	    -ms-animation: opa 1.2s 2s ease-in-out forwards;
+	    opacity: 0;
+	}
+	.shadow {
+	    width: 90px;
+	    height: 38px;
+	    background-color: #000;
+	    border-radius: 100%;
+	    position: absolute;
+	    right: -56%;
+	    top: 87%;
+	    z-index: 1;
+	    opacity: 0;
+	    -webkit-animation: opa2 1.2s 2s ease-in-out forwards;
+	    -moz-animation: opa2 1.2s 2s ease-in-out forwards;
+	    -ms-animation: opa2 1.2s 2s ease-in-out forwards;
+	}
+	#cube-game .container {
+	    position: absolute;
+	    top: 0;
+	    padding-top: 225px;
+	    width: 100%;
+	    height: 100%;
+	}
+
+	#cube-game .cube-container {
+	    perspective: 800px;
+	    margin: 0 auto;
+	    width: 150px;
+	    height: 150px;
+	}
+	#cube-game .hidden {
+	    display: none;
+	}
+
+	#cube-game .center {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	#cube-game .cube {
+	    -webkit-transform-origin: 50% 50%;
+	    -moz-transform-origin: 50% 50%;
+	    -ms-transform-origin: 50% 50%;
+	    transform-style: preserve-3d;
+	    animation: c 15s infinite;
+	    top: 0;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-style: preserve-3d;
+        -webkit-animation: c 4s 2s linear infinite;
+        -moz-animation: c 4s 2s linear infinite;
+        -ms-animation: c 4s 2s linear infinite;
+	}
+
+	#cube-game .cube, #cube-game .side {
+	    position: absolute;
+	    width: 150px;
+	    height: 150px;
+	    z-index: 20;
+	}
+
+	#cube-game .side {
+	    display: block;
+	}
+
+	#cube-game .side1 {
+	    -webkit-transform: translateZ(75px);
+	    -moz-transform: translateZ(75px);
+	    -ms-transform: translateZ(75px);
+	    background: url('face02.jpg');
+	}
+
+	#cube-game .side2 {
+	    -webkit-transform: rotateY(90deg) translateZ(75px);
+	    -moz-transform: rotateY(90deg) translateZ(75px);
+	    -ms-transform: rotateY(90deg) translateZ(75px);
+	    background: url('face02.jpg');
+	}
+
+	#cube-game .side3 {
+	    -webkit-transform: rotateY(180deg) translateZ(75px);
+	    -moz-transform: rotateY(180deg) translateZ(75px);
+	    -ms-transform: rotateY(180deg) translateZ(75px);
+	    background: url('face02.jpg');
+	}
+
+	#cube-game .side4 {
+	    -webkit-transform: rotateY(-90deg) translateZ(75px);
+	    -moz-transform: rotateY(-90deg) translateZ(75px);
+	    -ms-transform: rotateY(-90deg) translateZ(75px);
+	    background: url('face02.jpg');
+	}
+
+	#cube-game .side5 {
+	    -webkit-transform: rotateX(90deg) translateZ(75px);
+	    -moz-transform: rotateX(90deg) translateZ(75px);
+	    -ms-transform: rotateX(90deg) translateZ(75px);
+	    background: url('face02.jpg');
+	}
+
+	#cube-game .side6 {
+	    -webkit-transform: rotateX(-90deg) translateZ(75px);
+	    -moz-transform: rotateX(-90deg) translateZ(75px);
+	    -ms-transform: rotateX(-90deg) translateZ(75px);
+	    background: url('face02.jpg');
+	}
+}
+/*Cube*/
+
+@keyframes c {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+        -ms-transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateX(360deg) rotateY(360deg);
+        -moz-transform: rotateX(360deg) rotateY(360deg);
+        -ms-transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@keyframes opa {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes opa2 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: .5;
+	}
+}
